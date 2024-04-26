@@ -1,10 +1,13 @@
 package com.example.flashlightenhancedversion.ui.theme
 
 import androidx.compose.material3.Typography
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.flashlightenhancedversion.R
 
 // Set of Material typography styles to start with
 val Typography = Typography(
@@ -31,4 +34,199 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     )
     */
+)
+
+
+val InterFontFamily = FontFamily(
+    Font(R.font.inter_black, FontWeight.Black),
+    Font(R.font.inter_regular, FontWeight.Normal),
+    Font(R.font.inter_bold, FontWeight.Bold),
+    Font(R.font.inter_extra_bold, FontWeight.ExtraBold),
+    Font(R.font.inter_semi_bold, FontWeight.SemiBold),
+    Font(R.font.inter_medium, FontWeight.Medium),
+    Font(R.font.inter_light, FontWeight.Light),
+    Font(R.font.inter_extra_light, FontWeight.ExtraLight),
+    Font(R.font.inter_thin, FontWeight.Thin),
+)
+
+
+fun customizedTextStyle(
+    fontSize: Int = 14,
+    fontWeight: Int = 400,
+    lineHeight: Int = (fontSize * 1.5f).toInt(),
+    color: Color = TextColor3
+): TextStyle = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = fontSize.sp,
+    fontWeight = FontWeight(fontWeight),
+    lineHeight = lineHeight.sp,
+    color = color,
+)
+
+val h38 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 38.sp,
+    lineHeight = 53.sp,
+    fontWeight = FontWeight(600),
+    color = Color.Black,
+)
+
+val h32 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 32.sp,
+    lineHeight = 45.sp,
+    fontWeight = FontWeight(400),
+    color = Color.Black,
+)
+
+val h30 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 30.sp,
+    lineHeight = 45.sp,
+    fontWeight = FontWeight(400),
+    color = Color.Black,
+)
+
+val h24 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 24.sp,
+    lineHeight = 36.sp,
+    fontWeight = FontWeight(600),
+    color = TextColor3,
+)
+
+val h20 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 20.sp,
+    lineHeight = 30.sp,
+    fontWeight = FontWeight(600),
+    color = TextColor3,
+)
+
+val h18 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 18.sp,
+    lineHeight = 27.sp,
+    fontWeight = FontWeight(600),
+    color = TextColor3,
+)
+
+val h16 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 16.sp,
+    lineHeight = 24.sp,
+    fontWeight = FontWeight(600),
+    color = TextColor3,
+)
+
+val h14 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 14.sp,
+    lineHeight = 21.sp,
+    fontWeight = FontWeight(600),
+    color = TextColor3,
+)
+
+val body18 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 18.sp,
+    lineHeight = 27.sp,
+    fontWeight = FontWeight(400),
+    color = TextColor3,
+)
+
+val body16 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 16.sp,
+    lineHeight = 24.sp,
+    fontWeight = FontWeight(400),
+    color = TextColor3,
+)
+
+val body15 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 15.sp,
+    lineHeight = 22.sp,
+    fontWeight = FontWeight(400),
+    color = TextColor3,
+)
+
+val body14 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 14.sp,
+    lineHeight = 21.sp,
+    fontWeight = FontWeight(400),
+    color = TextColor3,
+)
+
+val body13 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 13.sp,
+    lineHeight = 20.sp,
+    fontWeight = FontWeight(400),
+    color = TextColor3,
+)
+
+val body12 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 12.sp,
+    lineHeight = 18.sp,
+    fontWeight = FontWeight(400),
+    color = TextColor3,
+)
+
+val body10 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 10.sp,
+    lineHeight = 15.sp,
+    fontWeight = FontWeight(400),
+    color = TextColor3,
+)
+
+val medium12 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 12.sp,
+    lineHeight = 18.sp,
+    fontWeight = FontWeight(500),
+    color = TextColor3,
+)
+
+val medium13 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 13.sp,
+    lineHeight = 18.sp,
+    fontWeight = FontWeight(500),
+    color = TextColor3,
+)
+
+val medium14 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 14.sp,
+    lineHeight = 21.sp,
+    fontWeight = FontWeight(500),
+    color = TextColor3,
+)
+
+val medium15 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 15.sp,
+    lineHeight = 22.sp,
+    fontWeight = FontWeight(500),
+    color = TextColor3,
+)
+
+val medium16 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 16.sp,
+    lineHeight = 24.sp,
+    fontWeight = FontWeight(500),
+    color = TextColor3,
+)
+
+val medium18 = TextStyle(
+    fontFamily = InterFontFamily,
+    fontSize = 18.sp,
+    lineHeight = 27.sp,
+    fontWeight = FontWeight(500),
+    color = TextColor3,
 )

@@ -80,4 +80,6 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.navigation.compose)
 
+    // Preferences DataStore - https://developer.android.com/topic/libraries/architecture/datastore#preferences-datastore-dependencies
+    implementation(libs.androidx.datastore.preferences)
 }
