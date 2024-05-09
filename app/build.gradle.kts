@@ -90,4 +90,7 @@ dependencies {
     implementation(libs.androidx.camera.video)
     implementation(libs.androidx.camera.view)
     implementation(libs.androidx.camera.extensions)
+
+    
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
 }
